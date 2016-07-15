@@ -4,28 +4,39 @@
 	<meta charset="UTF-8">
 	<title>Магазин Автозапчастей</title>
 	<style type="text/css"></style>
+	<link rel="stylesheet" href="/css/main.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container-fluid">
-		<div class="row">
+	<div class="container-fluid">
+		<div class="head row">
 			<div class="col-md-4 hidden-xs hidden-sm">
-			<img src="" alt="Logo">
+				<img src="/image/logo.gif" alt="Logo">
 			</div>
 			<div class="col-md-4 col-sm-6">
-				<p>Phonr number</p>
+				<p>Подбор и заказ запчастей с 9-00 до 20-00</p>
+				<ul>
+					<li class="head-phone"> <a href=""></a>тел: (050) 253-33-45 </li>
+					<li class="head-phone"> <a href=""></a>тел: (067) 253-33-45 </li>
+				</ul>
 			</div>
 			<div class="col-md-4 col-sm-6">
-			<p> Shopping cart</p>
+				<div class="panel panel-default-wrap">
+					<div class="panel-body panel-body-cart">
+						<a href="#" class="panel-shopcart"></a>
+						<p> Позиций : <b>10</b> Cумма заказа: <b>12345 грн.</b></p>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<div class="panel panel-default">
-					<div class="panel-heading">Выбор Автомобиля</div>
-					<div class="panel-body">
+				<div class="panel panel-default panel-wrap">
+					<div class="panel-heading panel-heading-wrap">Выбор Автомобиля</div>
+					<div class="panel-body panel-body-wrap">
 						<div class="form-group">
 							<label for="selectCarBrand">Автомобиль</label>
 							<select id="selectCarBrand" class="form-control">
@@ -40,19 +51,73 @@
 								<option>2001</option>
 							</select>
 						</div>
+						<div class="form-group">
+							<label for="selectCarYearMan">Модель</label>
+							<select id="selectCarYearMan" class="form-control">
+								<option>Model 1,5</option>
+								<option>Model 1,6</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label for="selectCarYearMan">Двигатель</label>
+							<select id="selectCarYearMan" class="form-control">
+								<option>Model 1,5</option>
+								<option>Model 1,6</option>
+							</select>
+						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-9">
+				<ol class="breadcrumb">
+					<li><a href="#">Автомобиль</a></li>
+					<li><a href="#">Год выпуска</a></li>
+					<li class="active">Модель</li>
+				</ol>
 				<div class="panel panel-default">
+					<div class="panel-heading panel-heading-wrap">
+						Модель
+					</div>
+
 					<div class="panel-body">
+						<ul>
+							<li>Alhambra</li>
+							<li>Altea</li>
+							<li>Cordoba</li>
+							<li>ExeoIbizaLeon</li>
+							<li>Toledo</li>
 						
-						<button type="button" class="btn btn-default">Default</button>
-						<button type="button" class="btn btn-primary">Primary</button>
+						</ul>
+
+						
 					</div>
 				</div>
 			</div>
 		</div>
-</div>
+		<div class="footer row">
+			<div class="col-md-4">
+				<address>
+					<strong>Twitter, Inc.</strong><br>
+					795 Folsom Ave, Suite 600<br>
+					San Francisco, CA 94107<br>
+					<abbr title="Phone">P:</abbr> (123) 456-7890
+				</address>
+
+				<address>
+					<strong>Full Name</strong><br>
+					<a href="mailto:#">first.last@example.com</a>
+				</address>
+
+			</div>
+			<div class="col-md-4">
+
+			</div>
+			<div class="col-md-4">
+
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate consequuntur totam minima molestias nemo, necessitatibus culpa consectetur ea quisquam. Delectus numquam, est, quae officiis enim cumque hic soluta perspiciatis necessitatibus.</p>
+			</div>
+			
+		</div>
+	</div>
 </body>
 </html>

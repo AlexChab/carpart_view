@@ -1,0 +1,75 @@
+body{
+	background: #fff url(../image/bg.gif) repeat-x;
+	/*font-family:  Geneva, Arial, Helvetica, sans-serif !important;*/
+	/*font-family: Georgia, 'Times New Roman', Times, serif !important;*/
+	/*font-family: PT Sans ,sans-serif !important;		*/
+	font-family: 'PT Serif', serif !important;
+}
+.head{
+	background: #eeeeee; /* Old browsers */
+	background: -moz-linear-gradient(top,  #eeeeee 0%, #cccccc 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #eeeeee 0%,#cccccc 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #eeeeee 0%,#cccccc 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */
+	height: auto;
+	padding: 5px;
+	margin-bottom: 15px;
+}
+.footer{
+
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+
+ 	height: auto;
+	padding: 5px;
+	margin-top: 15px;
+}
+.panel-default-wrap{
+	border: 1px solid #969696 !important;
+	border-radius: 4px;	
+}
+.panel-heading-wrap{
+	background: #ECEFF1 url(../image/bg_title.gif) repeat-x;
+  border-bottom: solid 1px #969696 !important;
+  padding: 10px;
+}
+.panel-body-wrap{
+	background:	-webkit-gradient(linear, left top, left bottom, from(#D8D9DD), to(#ECEFF2));
+  background: -moz-linear-gradient(top, #D8D9DD, #ECEFF2);
+  background: -o-linear-gradient(top, #D8D9DD, #ECEFF2);
+  background: -ms-linear-gradient(top, #D8D9DD, #ECEFF2);
+}
+.panel-body-cart{
+	background: #ECEFF1 url(../image/bg_title.gif) repeat-x;
+	border-radius: 4px;
+	padding: 1px;
+	height: auto;
+	padding: 5px !important;
+}
+.panel-body-cart p{
+	display: block;
+	font-size: 16px;
+	margin: 15px;
+}
+.panel-shopcart{
+	float: left;
+  background: url(../image/shopcart.png) no-repeat;
+  width: 53px;
+  height: 51px;
+}
+.head-phone{
+	display: block;
+	height: 25px;	
+	font-size: 16px;
+	line-height: 16px;
+  
+}
+.head-phone a{
+	 
+  width: 25px;
+  height: 25px;	
+}
