@@ -3,44 +3,50 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин Автозапчастей</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css"> -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600,600italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/css/main.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="/js/bootstrap.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
 		<div class="head row">
 			<div class="col-md-4 hidden-xs hidden-sm">
-				<img src="/image/logo.gif" alt="Logo">
+				<img src="/image/logo_1.png" alt="Logo">
 			</div>
-			<div class="col-md-4 col-sm-6 head-phone">
-				<p class="my-h3" > Подбор и заказ запчастей с 9-00 до 20-00</p>
-				<ul >
-					<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (050) 253-33-45 </li>
-					<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (067) 253-33-45 </li>
-				</ul>
-				
+			<div class="col-md-4 col-sm-6">
+				<div class="head-phone">
+					<div class="row">
+						<div class="col-md-12">
+							<p class="my-h4">Подбор и заказ запчастей с 9-00 до 20-00 пн-пт</p>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<ul class="pull-left" >
+								<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (050) <span>253-33-45</span> </li>
+								<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (067)<span> 253-33-45 </span> </li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-6 col-xs-6">
+							<button type="button" class="btn btn-success ">Обратный Звонок</button>
+						</div>
+					</div>
+				</div>		
 			</div>
 			<div class="col-md-4 col-sm-6">
 				<div class="panel-default-wrap">
 					<div class="panel-body panel-body-cart">
-						<a href="#" class="panel-shopcart"></a>
-						<p> Позиций : <b>10</b> Cумма заказа: <b>12345 грн.</b></p>
+						<a href="#" class="panel-shopcart"> </a>
+						<p> Позиций : <b>10</b> на сумму: <b>12345 грн.</b></p>
 					</div>
 				</div>
-				
 				<div class="input-group">
 					<input type="text" class="form-control" placeholder="Search for...">
 					<span class="input-group-btn">
 					<button class="btn btn-danger" type="button">Поиск</button>
 					</span>
 				</div>
-				
-
-						
 			</div>
 		</div>
 		<div class="row">
@@ -51,14 +57,14 @@
 						<div class="form-group">
 							
 							<select id="selectCarBrand" class="form-control">
-								<option>BMW X5</option>
+								<option>BMW X5 <i class="fa fa-times" aria-hidden="true"></i></option>
 								
 							</select>
 						</div>
 					</div>
 				</div>
 				<div class="panel panel-default panel-wrap">
-					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Выбор Автомобиля</div>
+					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-cogs text-danger" aria-hidden="true"></i> Выбор Автомобиля</div>
 					<div class="panel-body panel-body-wrap">
 						<div class="form-group">
 							<label for="selectCarBrand">Марка</label>
@@ -108,14 +114,244 @@
 					</div>
 
 					<div class="panel-body">
-						<ul>
+						<!-- <ul>
 							<li>Alhambra</li>
 							<li>Altea</li>
 							<li>Cordoba</li>
 							<li>ExeoIbizaLeon</li>
 							<li>Toledo</li>
-						
+						</ul> -->
+						<ul class="models">
+							<li>
+							<a class="menu1" " href="#"><b>ABARTH</b></a>
+							</li>
+							<li>
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/alfaromeo/"><b>ALFA ROMEO</b></a>
+							</li>
+							<li>
+							
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/audi/"><b>AUDI</b></a>
+							</li>
+							<li>
+								
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/bmw/"><b>BMW</b></a>
+							</li>
+							<li>
+								
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/bosch/"><b>BOSCH</b></a>
+							</li>
+							<li>
+							
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/buick/"><b>BUICK</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/byd/"><b>BYD</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/cadillac/"><b>CADILLAC</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/chery/"><b>CHERY</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/chevrolet/"><b>CHEVROLET</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/chevrolet/"><b>CHEVROLET USA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/chrysler/"><b>CHRYSLER</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/citroen/"><b>CITROEN</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/daewoo/"><b>DAEWOO</b></a>
+							</li>
 						</ul>
+						<ul class="models">
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Daihatsu/" target="_blank"><b>DAIHATSU</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/faw/"><b>FAW</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/fiat/"><b>FIAT</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/ford/"><b>FORD</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/geely/"><b>GEELY</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/gmc/"><b>GMC</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Honda/" target="_blank"><b>HONDA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/hummer/"><b>HUMMER</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/hyundai/"><b>HYUNDAI</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Infiniti/" target="_blank"><b>INFINITI</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/jaguar/"><b>JAGUAR</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/jeep/"><b>JEEP</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/kia/"><b>KIA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/lancia/"><b>LANCIA</b></a>
+							</li>
+						</ul>
+						<ul class="models">
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/landrover/"><b>LAND ROVER</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Lexus/" target="_blank"><b>LEXUS</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/lifan/"><b>LIFAN</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Mazda/" target="_blank"><b>MAZDA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/mercedes/"><b>MERCEDES</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/mgrover/"><b>MG ROVER</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/mini/"><b>MINI</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Mitsubishi/" target="_blank"><b>MITSUBISHI</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Nissan/" target="_blank"><b>NISSAN</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/opel/"><b>OPEL</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/peugeot/"><b>PEUGEOT</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/pontiac/"><b>PONTIAC</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/porsche/"><b>PORSCHE</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/renault/"><b>RENAULT</b></a>
+							</li>
+						</ul>
+						<ul class="models">
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/saab/"><b>SAAB</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/gm/saturn/"><b>SATURN</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/seat/"><b>SEAT</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/skoda/"><b>SKODA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/smart/"><b>SMART</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://ssangyong.exist.ru/" target="_blank"><b>SSANG YONG</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Subaru/" target="_blank"><b>SUBARU</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Suzuki/" target="_blank"><b>SUZUKI</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Toyota/" target="_blank"><b>TOYOTA</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/vw/"><b>VOLKSWAGEN</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/volvo/"><b>VOLVO</b></a>
+							</li>
+							<li>
+								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								<a class="menu1" style="display:inline; white-space: nowrap" href="/zaz/"><b>ZAZ CHANCE</b></a>
+							</li>
+							<li>
+								&nbsp;
+							</li>
+							<li>
+								&nbsp;
+							</li>
+						</ul>
+
+
+
 
 						
 					</div>

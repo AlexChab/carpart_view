@@ -1,14 +1,15 @@
-html {
+@import url(bootstrap.min.css);
+@import url(font-awesome.min.css);
 
- 
-}
 body{
 	background: #fff url(../image/bg.gif) repeat-x;
-		font-family: 'Open Sans', sans-serif !important;
-	/*font-family:  Geneva, Arial, Helvetica, sans-serif !important;*/
-	/*font-family: Georgia, 'Times New Roman', Times, serif !important;*/
-	/*font-family: PT Sans ,sans-serif !important;		*/
-	/*font-family: 'PT Serif', serif !important;*/
+	font-family: 'Open Sans', sans-serif !important;
+}
+.text-danger{
+	color: #b10000;
+}
+.btn-danger{
+	background-color: #b10000;
 }
 .head{
 	background: #eeeeee; /* Old browsers */
@@ -22,10 +23,8 @@ body{
 	border-bottom: solid 1px #fff;
 }
 .footer{
-
-border: 1px solid #969696 !important;
+	border: 1px solid #969696 !important;
 	border-radius: 4px;	
-
  	height: auto;
 	padding: 5px;
 	margin-top: 15px;
@@ -67,21 +66,23 @@ border: 1px solid #969696 !important;
   height: 51px;
 }
 .head-phone{
-	display: block;
-	height: 25px;	
-	font-size: 16px;
-	line-height: 16px;
+	
 	 
 }
 .head-phone li{
 	list-style: none;  
+	margin-bottom: 3px;
 }
+
 .head-phone ul{
 	padding: 0px;
 }
 .head-phone span{
-	color: blue;	 
-
+	color: blue;	
+	font-weight: bold; 
+}
+.head-phone p{
+	margin-bottom: 10px;
 }
 .panel-heading-choice-car{
 	float: left;
@@ -110,4 +111,17 @@ border: 1px solid #969696 !important;
 .my-h5{
 	font-size: 12px;
 	font-weight: bold;
+}
+.models{
+
+	float: left;
+}
+.models li{
+	list-style: none;
+}
+.models li:before {
+  content: "\f207"; 
+ 	font-family: FontAwesome;
+ 	display: inline-block; 
+ 	color: lightgray;
 }
