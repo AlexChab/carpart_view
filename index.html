@@ -3,13 +3,12 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Магазин Автозапчастей</title>
-	<style type="text/css"></style>
-	<link rel="stylesheet" href="/css/main.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
-	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600,600italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700,600,600italic,700italic&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/css/main.css">
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -46,6 +45,18 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3">
+				<div class="panel panel-default panel-wrap">
+					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Мой гараж</div>
+					<div class="panel-body panel-body-wrap">
+						<div class="form-group">
+							
+							<select id="selectCarBrand" class="form-control">
+								<option>BMW X5</option>
+								
+							</select>
+						</div>
+					</div>
+				</div>
 				<div class="panel panel-default panel-wrap">
 					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Выбор Автомобиля</div>
 					<div class="panel-body panel-body-wrap">
@@ -86,6 +97,7 @@
 			</div>
 			<div class="col-md-9">
 				<ol class="breadcrumb">
+					<li><a href="#"><i class="fa fa-home text-danger " aria-hidden="true"></i></a></li>
 					<li><a href="#">Автомобиль</a></li>
 					<li><a href="#">Год выпуска</a></li>
 					<li class="active">Модель</li>
