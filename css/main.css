@@ -1,9 +1,14 @@
+html {
+
+ 
+}
 body{
 	background: #fff url(../image/bg.gif) repeat-x;
+		font-family: 'Open Sans', sans-serif !important;
 	/*font-family:  Geneva, Arial, Helvetica, sans-serif !important;*/
 	/*font-family: Georgia, 'Times New Roman', Times, serif !important;*/
 	/*font-family: PT Sans ,sans-serif !important;		*/
-	font-family: 'PT Serif', serif !important;
+	/*font-family: 'PT Serif', serif !important;*/
 }
 .head{
 	background: #eeeeee; /* Old browsers */
@@ -17,12 +22,8 @@ body{
 }
 .footer{
 
-/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
-background: #ffffff; /* Old browsers */
-background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+border: 1px solid #969696 !important;
+	border-radius: 4px;	
 
  	height: auto;
 	padding: 5px;
@@ -31,6 +32,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 .panel-default-wrap{
 	border: 1px solid #969696 !important;
 	border-radius: 4px;	
+	padding-bottom: 2px;
+	margin-bottom: 5px;
 }
 .panel-heading-wrap{
 	background: #ECEFF1 url(../image/bg_title.gif) repeat-x;
@@ -48,7 +51,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	border-radius: 4px;
 	padding: 1px;
 	height: auto;
-	padding: 5px !important;
+	padding: 2px !important;
+
 }
 .panel-body-cart p{
 	display: block;
@@ -66,10 +70,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	height: 25px;	
 	font-size: 16px;
 	line-height: 16px;
-  
-}
-.head-phone a{
 	 
+}
+.head-phone li{
+	list-style: none;  
+}
+.head-phone ul{
+	padding: 0px;
+}
+.head-phone span{
+	color: blue;	 
+
+}
+.panel-heading-choice-car{
+	float: left;
+  background: url(../image/phone.png) no-repeat;
   width: 25px;
-  height: 25px;	
+  height: 25px;
+
+}
+.my-h1,.my-h2,.my-h3,.my-h4,.my-h5{
+	text-transform: uppercase;
+	
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+.my-h1{
+
+}
+.my-h3{
+	font-size: 16px;
+
+}
+.my-h4{
+	font-size: 14px;
+	font-style: bold;	
+}
+.my-h5{
+	font-size: 12px;
+	font-weight: bold;
 }
