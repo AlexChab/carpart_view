@@ -7,5 +7,13 @@ $(document).ready(function(){
 		$("#my-garage").removeClass("fa-chevron-down");
 	  $("#my-garage").addClass("fa-chevron-up");
 	})
+	$('.category').hover(function(){
+		console.log();
 
+		// this.('i').addClass('fa-spin');
+	},
+	function(){
+		console.log('by');
+	}
+	)
 });

@@ -1,4 +1,47 @@
+Запрос на производителя автомобиля
+фильтруме  по колонке только производителей легкового тарнспорта
+SELECT
+	MFA_ID,
+	MFA_BRAND
+FROM
+	MANUFACTURERS
+WHERE 
+	MFA_PC_MFC = '1' 
+ORDER BY
+	MFA_BRAND;
+Создаем свою таблицу из основной путем выборки из админки или создаем свою таблицу
+Пример KIA - 648
+__________________________________________________________________________________
 
+Выбор Моделей Производите
+Дополнительно фильтруме по полю легковой - грузовой 
+MOD_PC = '1' AND MOD_CV = '0'
+
+
+SET @MFA_ID = 648; /* KIA */
+SET @LNG_ID = 16; /* 1 - Немецкий язык; 16 - Русский язык */
+
+SELECT
+	MOD_ID,
+    mod_pc,
+    MOD_CDS_ID,
+    
+	TEX_TEXT AS MOD_CDS_TEXT,
+	MOD_PCON_START,
+	MOD_PCON_END
+FROM
+	           MODELS
+	INNER JOIN COUNTRY_DESIGNATIONS ON CDS_ID = MOD_CDS_ID
+	INNER JOIN DES_TEXTS ON TEX_ID = CDS_TEX_ID
+WHERE
+	MOD_MFA_ID = @MFA_ID AND
+	CDS_LNG_ID = @LNG_ID AND (MOD_PC = '1' AND MOD_CV = '0')
+    
+ORDER BY
+	MOD_CDS_TEXT
+;
+
+___________________________________________________________________________
 
 
 

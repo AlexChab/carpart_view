@@ -85,7 +85,7 @@ body{
   height: 25px;
 
 }
-.h1,.h2,.h3,.my-h4,.my-h5{
+.h1,.h2,.h3,.h4,.h5{
 	text-transform: uppercase;
 	margin-bottom: 0px;
 	margin-top: 0px;
@@ -100,16 +100,15 @@ body{
 	font-size: 16px;
 
 }
-.my-h4{
+.h4{
 	font-size: 14px;
 	font-style: bold;	
 }
-.my-h5{
+.h5{
 	font-size: 12px;
 	font-weight: bold;
 }
 .models{
-
 	float: left;
 }
 .models li{
@@ -121,8 +120,29 @@ body{
  	display: inline-block; 
  	color: lightgray;
 }
-.footer{
+.category{
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+.category li{
+	list-style: none;
+	list-style-position: outside;
+}
+.category a{
+	margin-left: 5px;
+	color: #000;
+}
+.category a:hover{
+	color:#337ab7;
+}
+.category li:before {
+  content: "\f013"; 
+ 	font-family: FontAwesome;
+ 	display: inline-block; 
+ 	color: lightgray;
+}
 
+.footer{
 }
 .footer li{
 	list-style:none;
