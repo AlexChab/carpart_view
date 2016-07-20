@@ -9,6 +9,7 @@
 	<link rel="stylesheet" href="/css/main.css">
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script src="/js/bootstrap.min.js"></script>
+	<script src="/js/main.js"></script>
 </head>
 <body>
 	<div class="container-fluid">
@@ -24,8 +25,8 @@
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-6">
 							<ul class="pull-left" >
-								<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (050) <span>253-33-45</span> </li>
-								<li class="my-h3"><i class="fa fa-volume-control-phone text-danger"></i> (067)<span> 253-33-45 </span> </li>
+								<li class="h3"><i class="fa fa-volume-control-phone text-danger"></i> (050) <span class="text-primary">253-33-45</span> </li>
+								<li class="h3"><i class="fa fa-volume-control-phone text-danger"></i> (067)<span class="text-primary"> 253-33-45 </span> </li>
 							</ul>
 						</div>
 						<div class="col-md-6 col-sm-6 col-xs-6">
@@ -51,15 +52,22 @@
 		</div>
 		<div class="row">
 			<div class="col-md-3">
-				<div class="panel panel-default panel-wrap">
-					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Мой гараж</div>
-					<div class="panel-body panel-body-wrap">
-						<div class="form-group">
-							
-							<select id="selectCarBrand" class="form-control">
-								<option>BMW X5 <i class="fa fa-times" aria-hidden="true"></i></option>
-								
-							</select>
+				<div class="panel panel-default panel-wrap panel-group" id="accordion">
+					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Мой гараж <i id="my-garage" class="fa fa-chevron-up pull-right" aria-hidden="true" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></i></div>
+					<div id="collapseOne" class="panel-collapse collapse in">
+						<div class="panel-body panel-body-wrap">
+							<div class="form-group">
+								<div class="input-group">
+									<input type="button" class="form-control btn btn-default btn-sm input-sm" placeholder="" aria-describedby="basic-addon2" value="Волга ГАЗ24-10" >
+									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-times" aria-hidden="true"></i></span>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="input-group">
+									<input type="button" class="form-control btn btn-success input-sm" placeholder="" aria-describedby="basic-addon2" value="BMW X6" >
+									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-times" aria-hidden="true"></i></span>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -67,36 +75,49 @@
 					<div class="panel-heading panel-heading-wrap my-h5"><i class="fa fa-cogs text-danger" aria-hidden="true"></i> Выбор Автомобиля</div>
 					<div class="panel-body panel-body-wrap">
 						<div class="form-group">
-							<label for="selectCarBrand">Марка</label>
-							<select id="selectCarBrand" class="form-control">
-								<option>Audi</option>
-								<option>Alfa-Romeo</option>
-							</select>
+							<div class="input-group">
+  						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-cog text-success" aria-hidden="true"></i></span>
+  						<input type="button" class="btn btn-primary form-control" id="selectCarBrand"  value="Марка автмобиля" aria-describedby="basic-addon1">
+							</div>
+
 						</div>
 						<div class="form-group">
-							<label for="selectCarYearMan">Год выпуска</label>
+						<div class="input-group">
+  						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-cog text-muted" aria-hidden="true"></i></span>
+  						<input type="button" class="btn btn-primary form-control" id="selectCarBrand"  value="Год выпуска" aria-describedby="basic-addon1">
+						</div>
+					
+						<!-- 	<label for="selectCarYearMan">Год выпуска</label>
 							<select id="selectCarYearMan" class="form-control">
 								<option>2000</option>
 								<option>2001</option>
-							</select>
+							</select> -->
 						</div>
 						<div class="form-group">
-							<label for="selectCarYearMan">Модель</label>
+						<div class="input-group">
+  						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-cog text-muted" aria-hidden="true"></i></span>
+  						<input type="button" class="btn btn-primary form-control" id="selectCarBrand"  value="Модель" aria-describedby="basic-addon1">
+						</div>
+						
+							<!-- <label for="selectCarYearMan">Модель</label>
 							<select id="selectCarYearMan" class="form-control">
 								<option>Model 1,5</option>
 								<option>Model 1,6</option>
-							</select>
+							</select> -->
 						</div>
 						<div class="form-group">
-							<label for="selectCarYearMan">Двигатель</label>
-							<select id="selectCarYearMan" class="form-control">
-								<option>Model 1,5</option>
-								<option>Model 1,6</option>
-							</select>
+							<div class="input-group">
+  						<span class="input-group-addon" id="basic-addon1"><i class="fa fa-cog text-muted" aria-hidden="true"></i></span>
+  						<input type="button" class="btn btn-primary form-control" id="selectCarBrand"  value="Двигатель" aria-describedby="basic-addon1">
+						</div>
+							
 						</div>
 						<div class="form-group">
-							<label for="inputCarVinCode">Вин код автомобиля *</label>
-							<input type="text" class="form-control" id="inputCarVinCode" >
+							<div class="input-group">
+  						<span class="input-group-addon" id="forInputVinCode"><i class="fa fa-cog text-muted" aria-hidden="true"></i></span>
+  						<input type="text" class="form-control" id="InputVinCode" name="inputVinCode"  placeholder="Вин код автомобиля" aria-describedby="forInputVinCode">
+							</div>
+							
 						</div>
 					</div>
 				</div>
@@ -123,7 +144,7 @@
 						</ul> -->
 						<ul class="models">
 							<li>
-							<a class="menu1" " href="#"><b>ABARTH</b></a>
+							<a  href="#"><b>ABARTH</b></a>
 							</li>
 							<li>
 								<a class="menu1" style="display:inline; white-space: nowrap" href="/alfaromeo/"><b>ALFA ROMEO</b></a>
@@ -319,35 +340,30 @@
 								<a class="menu1" style="display:inline; white-space: nowrap" href="http://ssangyong.exist.ru/" target="_blank"><b>SSANG YONG</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
-								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Subaru/" target="_blank"><b>SUBARU</b></a>
+								
+								<a href="#" target="_blank"><b>SUBARU</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
-								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Suzuki/" target="_blank"><b>SUZUKI</b></a>
+								
+								<a href="#" target="_blank"><b>SUZUKI</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								
 								<a class="menu1" style="display:inline; white-space: nowrap" href="http://www.japancats.ru/Toyota/" target="_blank"><b>TOYOTA</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
+								
 								<a class="menu1" style="display:inline; white-space: nowrap" href="/vw/"><b>VOLKSWAGEN</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
-								<a class="menu1" style="display:inline; white-space: nowrap" href="/volvo/"><b>VOLVO</b></a>
+								
+								<a  style="display:inline; white-space: nowrap" href="/volvo/"><b>VOLVO</b></a>
 							</li>
 							<li>
-								<img src="img/point.gif" width="5" height="5" border="0" alt="" />
-								<a class="menu1" style="display:inline; white-space: nowrap" href="/zaz/"><b>ZAZ CHANCE</b></a>
+								
+								<a href="/zaz/"><b>ZAZ CHANCE</b></a>
 							</li>
-							<li>
-								&nbsp;
-							</li>
-							<li>
-								&nbsp;
-							</li>
+							
 						</ul>
 
 
@@ -356,10 +372,69 @@
 						
 					</div>
 				</div>
+ <!-- Панель группы подбора -->
+				<div class="panel panel-default">
+					<div class="panel-heading panel-heading-wrap">
+						разделы подбора
+					</div>
+					<div class="panel-body">
+					<div class="row">
+						<div class="container-fluid">
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p class="h4">Ходовая и рулевое</p>
+								<ul>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p class="h4">Ходовая и рулевое</p>
+								<ul>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p class="h4">Ходовая и рулевое</p>
+								<ul>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+								</ul>
+							</div>
+							<div class="col-xs-12 col-sm-6 col-md-4">
+								<p class="h4">Ходовая и рулевое</p>
+								<ul>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+									<li>Ссылка на раздел</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+						
+					</div>
+				</div>
+<!-- конец панели группы подбора -->
 			</div>
 		</div>
-		<div class="footer row">
-			<div class="col-md-4">
+		<div class="row footer">
+		<hr>
+			<div class="col-md-4 col-sm-4 col-xs-6">
 				<address>
 					<strong>Магазин - склад</strong><br>
 					65100 г.Одесса , авторынок "Успех"<br>
@@ -368,23 +443,20 @@
 				</address>
 
 				<address>
-					<strong>Написать</strong><br>
+				<strong>Почта</strong><br>
 					<a href="mailto:#">uspex@example.com</a>
 				</address>
-
 			</div>
-			<div class="col-md-4">
-			<h4>Доставка и Оплата</h4>
-			<h4>ОПлата ПРиват 24</h4>
-
-
+			<div class="col-md-4 col-sm-4 col-xs-6">
+				<ul>
+					<li><a href="#"><b> Оплата Приват24</b></a></li>
+					<li><a href="#"><b> Доставка</b></a></li>
+					<li><a href="#"><b> Гарантия</b></a></li>
+				</ul>
 			</div>
-			<div class="col-md-4">
-
-				<p> Киев, Харьков, Донецк, Днепр, Одесса, Львів, Запорожье, Винница, Житомир, Ивано-Франковск, Кировоград, Луганск, Луцк, Николаев, Полтава, Ровно, Симферополь, Сумы, Тернополь, Ужгород, Херсон, Хмельницкий, Черкассы, Чернигов, Черновцы, Мариуполь, Макеевка, Севастополь, Горловка, Днепродзержинск, Кременчуг, Белая Церковь, Краматорск, Мелитополь, Керчь, Никополь, Славянск, Бердянск, Ужгород, Алчевск, Павлоград, Северодонецк, Евпатория, Лисичанск, Каменец-Подольский</p>
+			<div class="col-md-4 col-sm-4 hidden-xs">
+				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, aliquam, accusamus qui assumenda sequi aut illo ducimus corporis consequuntur magni reiciendis error magnam vitae, vel. Id excepturi ipsa at.</p></div>
 			</div>
-			
-		</div>
 	</div>
 </body>
 </html>

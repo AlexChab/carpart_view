@@ -22,13 +22,7 @@ body{
 	margin-bottom: 15px;
 	border-bottom: solid 1px #fff;
 }
-.footer{
-	border: 1px solid #969696 !important;
-	border-radius: 4px;	
- 	height: auto;
-	padding: 5px;
-	margin-top: 15px;
-}
+
 .panel-default-wrap{
 	border: 1px solid #969696 !important;
 	border-radius: 4px;	
@@ -78,7 +72,7 @@ body{
 	padding: 0px;
 }
 .head-phone span{
-	color: blue;	
+		
 	font-weight: bold; 
 }
 .head-phone p{
@@ -91,16 +85,18 @@ body{
   height: 25px;
 
 }
-.my-h1,.my-h2,.my-h3,.my-h4,.my-h5{
+.h1,.h2,.h3,.my-h4,.my-h5{
 	text-transform: uppercase;
-	
 	margin-bottom: 0px;
 	margin-top: 0px;
 }
-.my-h1{
-
+.h1{
+	font-size: 20px;
 }
-.my-h3{
+.h2{
+	font-size: 18px;	
+}
+.h3{
 	font-size: 16px;
 
 }
@@ -124,4 +120,17 @@ body{
  	font-family: FontAwesome;
  	display: inline-block; 
  	color: lightgray;
+}
+.footer{
+
+}
+.footer li{
+	list-style:none;
+}
+.footer li:before {
+  content: "\f101"; 
+ 	font-family: FontAwesome;
+ 	display: inline-block; 
+ 	color:#b10000;
+ 	
 }
