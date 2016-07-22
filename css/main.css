@@ -1,6 +1,9 @@
 @import url(bootstrap.min.css);
 @import url(font-awesome.min.css);
 
+/*color blue #337ab7
+color red #b10000
+*/
 body{
 	background: #fff url(../image/bg.gif) repeat-x;
 	font-family: 'Open Sans', sans-serif !important;
@@ -141,7 +144,25 @@ body{
  	display: inline-block; 
  	color: lightgray;
 }
+.letter thead tr{
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f7f9+0,eff1f2+0,d7dee3+46,d2dbdd+53,d7dee3+100 */
+background: #f5f7f9; /* Old browsers */
+background: -moz-linear-gradient(top,  #f5f7f9 0%, #eff1f2 0%, #d7dee3 46%, #d2dbdd 53%, #d7dee3 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f5f7f9 0%,#eff1f2 0%,#d7dee3 46%,#d2dbdd 53%,#d7dee3 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f5f7f9 0%,#eff1f2 0%,#d7dee3 46%,#d2dbdd 53%,#d7dee3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f5f7f9', endColorstr='#d7dee3',GradientType=0 ); /* IE6-9 */
 
+
+}
+.letter tbody tr{
+
+}
+.letter tbody tr:hover{
+	background:  #E5E9F9;
+	cursor: pointer;
+	color: #337ab7;
+	font-weight: bold;
+}
 .footer{
 }
 .footer li{

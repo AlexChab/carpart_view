@@ -12,6 +12,7 @@
 	<script src="/js/main.js"></script>
 </head>
 <body>
+
 	<div class="container-fluid">
 		<div class="head row">
 			<div class="col-md-4 hidden-xs hidden-sm">
@@ -53,19 +54,23 @@
 		<div class="row">
 			<div class="col-md-3">
 				<div class="panel panel-default panel-wrap panel-group" id="accordion">
-					<div class="panel-heading panel-heading-wrap h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Мой гараж <i id="my-garage" class="fa fa-chevron-up pull-right" aria-hidden="true" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></i></div>
-					<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-heading panel-heading-wrap h5"><i class="fa fa-car text-danger " aria-hidden="true"></i> Мой гараж <i id="my-garage" class="fa fa-chevron-down pull-right" aria-hidden="true" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"></i></div>
+					<div id="collapseOne" class="panel-collapse collapse ">
 						<div class="panel-body panel-body-wrap">
-							<div class="form-group">
+							<div class="form-group" id="form-id-1111">
 								<div class="input-group">
-									<input type="button" class="form-control btn btn-default btn-sm input-sm" placeholder="" aria-describedby="basic-addon2" value="Волга ГАЗ24-10" >
-									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-times" aria-hidden="true"></i></span>
+									<input type="button" class="form-control input-sm my-car" value="Wlokswagen" >
+									<span class="input-group-btn">
+										<button class="btn btn-default btn-sm del-my-car" type="button" id="id-1111"><i class="fa fa-times" aria-hidden="true"></i> </button>
+									</span>
 								</div>
 							</div>
-							<div class="form-group">
+							<div class="form-group" id="form-id-2222">
 								<div class="input-group">
-									<input type="button" class="form-control btn btn-success input-sm" placeholder="" aria-describedby="basic-addon2" value="BMW X6" >
-									<span class="input-group-addon" id="basic-addon2"><i class="fa fa-times" aria-hidden="true"></i></span>
+									<input type="button" class="form-control input-sm my-car"  value="BMW-X5" >
+									<span class="input-group-btn">
+										<button class="btn btn-default btn-sm del-my-car" id="id-2222" type="button"><i class="fa fa-times" aria-hidden="true"></i> </button>
+									</span>
 								</div>
 							</div>
 						</div>
@@ -375,7 +380,7 @@
 					</div>
 				</div>
 <!-- конец панели группв список -->
- <!-- Панель группы подбора -->
+ 				<!-- Панель группы подбора -->
 				<div class="panel panel-default">
 					<div class="panel-heading panel-heading-wrap">
 						Категории запчастей
@@ -425,7 +430,65 @@
 						</div>
 					</div>
 				</div>
-<!-- конец панели группы подбора -->
+				<!-- конец панели группы подбора -->
+				<!-- Табличная панель  -->
+				<div class="panel panel-default">
+					<div class="panel-heading panel-heading-wrap">
+						Табличная панель
+					</div>
+					<div class="panel-body">
+
+						<div class="table-responsive">
+							<table class="table letter">
+								<thead>
+									<tr>
+										<th>Модификация</th>
+										<th>Топливо</th>
+										<th>Модель</th>
+										<th>Мощность</th>
+										<th>Обьем</th>
+										<th>Дата выпуска</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>1.6</td>
+										<td>Бензин</td>
+										<td>GF4D</td>
+										<td>122</td>
+										<td>1.6</td>
+										<td>2004-2008</td>
+									</tr>
+									<tr>
+										<td>1.6</td>
+										<td>Бензин</td>
+										<td>GF4D</td>
+										<td>122</td>
+										<td>1.6</td>
+										<td>2004-2008</td>
+									</tr>
+									<tr>
+										<td>1.6</td>
+										<td>Бензин</td>
+										<td>GF4D</td>
+										<td>122</td>
+										<td>1.6</td>
+										<td>2004-2008</td>
+									</tr>
+									<tr>
+										<td>1.6</td>
+										<td>Бензин</td>
+										<td>GF4D</td>
+										<td>122</td>
+										<td>1.6</td>
+										<td>2004-2008</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+				<!-- Конец табличной панели -->
 			</div>
 		</div>
 		<div class="row footer">
@@ -454,5 +517,22 @@
 				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit ullam, aliquam, accusamus qui assumenda sequi aut illo ducimus corporis consequuntur magni reiciendis error magnam vitae, vel. Id excepturi ipsa at.</p></div>
 			</div>
 	</div>
+	<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="smallModal" id="smallModal">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="gridSystemModalLabel">Предупреждение</h4>
+      </div>
+      <div class="modal-body">
+      	Удалить элемент 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal"> Скажи Нет</button>
+        <button type="button" class="btn btn-primary">ДА</button>
+      </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
